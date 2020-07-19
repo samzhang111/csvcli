@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ipython -i -c "import pandas as pd; pd.set_option('display.max_columns', 50); import sys; print(sys.argv); df=pd.read_csv(' '.join(sys.argv[4:])); df.head()" $1
